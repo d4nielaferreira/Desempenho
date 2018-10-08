@@ -1,0 +1,21 @@
+void busca_bin(int *vetor) 
+{
+int achou=0, inicio=0, fim=TAM-1, meio, busca; 
+printf("\nEntre com o inteiroa ser pesquisado: "); 
+scanf("%d",&busca); 
+while (inicio<=fim)
+{
+	meio=(inicio+fim)/2; 
+	printf("\nMeio=%d",meio); 
+	if(vetor[meio]==busca)
+		achou=1; 
+	if(busca<vetor[meio]) 
+		fim=meio-1; 
+	else
+		inicio=meio+1; 
+}
+if (achou==1) 
+	printf("\nAchou o valor %d\n",busca); 
+else
+	printf("\nNao achou o valor\n); 
+}
