@@ -1,0 +1,41 @@
+public class Program 
+    { 
+       public static void Main(string[] args) 
+        { 
+            int[] vetor = new int [1000]; 
+ 
+            Console.WriteLine("Ordenação Bolha"); 
+ 
+            Bolha(vetor, vetor.Length); 
+ 
+            for (int i = 0; i < vetor.Length; i++) 
+                Console.WriteLine(vetor[i]); 
+ 
+            Console.ReadLine(); 
+        } 
+ 
+        static void Bolha(int[] arr, int length) 
+        { 
+            int aux = 0; 
+            /*Irá percorrer o vetor, comparando cada elemento do vetor com o elemento 
+             * imediatamente seguinte (arr[j] = arr[j + 1];) 
+             * O numero maximo de execuções do trecho do algoritmo 
+             * p/ que o vetor fique ordenado é de N - 1, onde N é o numero de vezes.*/  
+ 
+            // i determina o número de etapas para a ordenação 
+            for (int i = 0; i < length - 1; i++) 
+            { 
+                // j determina o numero de comparações em cada etapa e os indices a serem 
+                //pesquisados para a comparação. 
+                for (int j = 0; j < length - (i + 1); j++) 
+                {  
+                    if (arr[j] > arr[j + 1]) 
+                    { 
+                        aux = arr[j]; 
+                        arr[j] = arr[j + 1]; 
+                        arr[j + 1] = aux; 
+                    } 
+                } 
+            } 
+        } 
+    }
