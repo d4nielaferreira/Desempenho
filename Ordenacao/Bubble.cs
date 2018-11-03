@@ -13,7 +13,7 @@ namespace Ordenacao
         public Bubble(int[] vetor)
         {
             Console.WriteLine("Ordenação Bolha");
-
+            Console.WriteLine(tempoinicio.ToString("h:mm:ss.fff tt"));
 
             Bolha(vetor);
 

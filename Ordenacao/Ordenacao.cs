@@ -12,12 +12,21 @@ namespace Ordenacao
 {
     public partial class Ordenacao : Form
     {
-        //Iniciando as variáveis para efetuar a geração dos valores aleatórios
-        int Min = 0, Max = 100000;
-        int[] numeros = new int[100000];
+        //iniciando o array para armezar os números a serem ordenados
+        int[] numeros;
 
-        public Ordenacao()
+        public Ordenacao(string o)
         {
+            //Escolher qual números serão utilizados
+            if(o == "aleatorio")
+            {
+                numeros = aleatorio();
+            }
+            else
+            {
+
+            }
+
             InitializeComponent();
         }
 
@@ -42,14 +51,21 @@ namespace Ordenacao
             QuickSort heap = new QuickSort(numeros);
         }
 
-        public void Ordenacao_Load(object sender, EventArgs e)
+        //Método para gerar os números aleatóriamente
+        public int[] aleatorio()
         {
+            //Iniciando as variáveis para efetuar a geração dos valores aleatórios
+            int Min = 0, Max = 100000;
+            int[] numeros = new int[100000];
+
             //Gerando os números aleatórios
             Random randNum = new Random();
             for (int i = 0; i < numeros.Length; i++)
             {
                 numeros[i] = randNum.Next(Min, Max);
             }
+
+            return numeros;
         }
     }
 }

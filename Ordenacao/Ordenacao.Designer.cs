@@ -73,7 +73,6 @@
             this.Controls.Add(this.button1);
             this.Name = "Ordenacao";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Ordenacao_Load);
             this.ResumeLayout(false);
 
         }

@@ -13,6 +13,8 @@ namespace Ordenacao
 
         public QuickSort(int[] numeros)
         {
+            Console.WriteLine("Ordenação QuickSort");
+
             Console.WriteLine(tempoinicio.ToString("h:mm:ss.fff tt"));
             quickSort(numeros);
 
