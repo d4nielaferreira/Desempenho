@@ -10,47 +10,27 @@ namespace Desempenho
     {
         static void Main(string[] args)
         {
-            int achou, inicio, fim, meio, busca, TAM;
-            int[] vetor = new int[1000];
-            TAM = 1000;
-            achou = 0;
-            inicio = 0;
-            fim = TAM - 1; 
-            var populador = 0;
+            int option;
 
-            foreach (var posicao in vetor)
+            Console.WriteLine("Escolha o mï¿½todo");
+            option = int.Parse(Console.ReadLine());
+
+            if(option == 1)
             {
-                vetor[posicao] = populador + 1;
+                Bubble bubble = new Bubble();
             }
 
-            Console.WriteLine("Entre com um número inteiro a ser pesquisado: ");
-            busca = int.Parse(Console.ReadLine());
-
-            while (inicio <= fim)
+            if (option == 2)
             {
-                meio = (inicio + fim) / 2;
-                Console.WriteLine("Meio= " + meio);
-                if (vetor[meio] == busca)
-                {
-                    achou = 1;
-                }
-                if (busca < vetor[meio])
-                {
-                    fim = meio - 1;
-                }
-                else
-                    inicio = meio + 1;
+                QuickSort quick = new QuickSort();
             }
 
-            if (achou == 1)
+            if (option == 3)
             {
-                Console.WriteLine("Valor ", +busca, " encontrado");
+                HeapSort heap = new HeapSort();
             }
-            else
-                Console.WriteLine("Valor não encontrado");
-
-
-            Console.ReadLine();
         }
+
+
     }
 }
