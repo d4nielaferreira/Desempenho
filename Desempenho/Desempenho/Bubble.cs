@@ -15,9 +15,10 @@ namespace Desempenho
             //int[] vetor = { 2, 5, 8, 4, 1, 0, 3, 6, 9, 10, 15, 21, 11, 12, 54 };
 
             int Min = 0;
-            int Max = 100;
+            int Max = 100000;
+            Console.WriteLine(tempoinicio.ToString("h:mm:ss.fff tt"));
 
-            int[] vetor = new int[100];
+            int[] vetor = new int[100000];
 
             Random randNum = new Random();
 
@@ -29,7 +30,7 @@ namespace Desempenho
 
             Console.WriteLine("Ordenação Bolha");
 
-            Console.WriteLine(tempoinicio.ToString("h:mm:ss.fff tt"));
+            
             Bolha(vetor);
 
             //for (int i = 0; i < vetor.Length; i++)

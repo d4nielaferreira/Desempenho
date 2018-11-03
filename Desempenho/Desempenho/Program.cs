@@ -12,7 +12,7 @@ namespace Desempenho
         {
             int option;
 
-            Console.WriteLine("Escolha o m�todo");
+            Console.WriteLine("Escolha o método");
             option = int.Parse(Console.ReadLine());
 
             if(option == 1)

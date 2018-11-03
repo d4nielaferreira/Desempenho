@@ -13,6 +13,28 @@ namespace Desempenho
         public DateTime tempoinicio = DateTime.Now;
         public DateTime tempofinal;
 
+        public HeapSort()
+        {
+            Console.WriteLine(tempoinicio.ToString("h:mm:ss.fff tt"));
+            int Min = 0;
+            int Max = 100000;
+
+            int[] vetor = new int[100000];
+
+            Random randNum = new Random();
+
+            for (int i = 0; i < vetor.Length; i++)
+            {
+                vetor[i] = randNum.Next(Min, Max);
+            }
+
+            PerformHeapSort(vetor);
+
+            tempofinal = DateTime.Now;
+            Console.WriteLine(tempofinal.ToString("h:mm:ss.fff tt"));
+            Console.ReadKey();
+        }
+
         private void BuildHeap(int[] arr)
         {
             heapSize = arr.Length - 1;
@@ -59,13 +81,6 @@ namespace Desempenho
                 heapSize--;
                 Heapify(arr, 0);
             }
-            DisplayArray(arr);
-        }
-        private void DisplayArray(int[] arr)
-        {
-            for (int i = 0; i < arr.Length; i++)
-            { Console.Write("[{0}]", arr[i]); }
-            tempofinal = DateTime.Now;
         }
     }
 }
