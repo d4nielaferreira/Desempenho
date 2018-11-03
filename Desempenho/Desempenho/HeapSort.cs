@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Desempenho
 {
-
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 13abd6f21678b7200720b7188ee53a6c05c4cdb6
     class HeapSort
     {
         private int heapSize;
@@ -66,12 +69,6 @@ namespace Desempenho
             for (int i = 0; i < arr.Length; i++)
             { Console.Write("[{0}]", arr[i]); }
             tempofinal = DateTime.Now;
-
-            Console.WriteLine(tempoinicio);
-
-            Console.WriteLine(tempofinal);
-
-            Console.ReadKey();
         }
     }
 }

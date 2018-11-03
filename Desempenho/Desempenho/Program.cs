@@ -10,47 +10,40 @@ namespace Desempenho
     {
         static void Main(string[] args)
         {
-            int achou, inicio, fim, meio, busca, TAM;
-            int[] vetor = new int[1000];
-            TAM = 1000;
-            achou = 0;
-            inicio = 0;
-            fim = TAM - 1; 
-            var populador = 0;
+<<<<<<< HEAD
+            int option;
 
-            foreach (var posicao in vetor)
+            Console.WriteLine("Escolha o método");
+            option = int.Parse(Console.ReadLine());
+
+            if(option == 1)
             {
-                vetor[posicao] = populador + 1;
+                Bubble bubble = new Bubble();
             }
 
-            Console.WriteLine("Entre com um número inteiro a ser pesquisado: ");
-            busca = int.Parse(Console.ReadLine());
-
-            while (inicio <= fim)
+            if (option == 2)
             {
-                meio = (inicio + fim) / 2;
-                Console.WriteLine("Meio= " + meio);
-                if (vetor[meio] == busca)
-                {
-                    achou = 1;
-                }
-                if (busca < vetor[meio])
-                {
-                    fim = meio - 1;
-                }
-                else
-                    inicio = meio + 1;
+                QuickSort quick = new QuickSort();
             }
 
-            if (achou == 1)
+            if (option == 3)
             {
-                Console.WriteLine("Valor ", +busca, " encontrado");
+                HeapSort heap = new HeapSort();
             }
-            else
-                Console.WriteLine("Valor não encontrado");
+=======
+            Binario Teste = new Binario();
+            Teste.PesquisaBinaria();
 
-
+            int[] arr = { 10, 64, 7, 52, 32, 18, 2, 48 };
+            HeapSort hs = new HeapSort();
+            Console.WriteLine(hs.tempoinicio.ToString("h:mm:ss.fff tt"));
+            hs.PerformHeapSort(arr);
+            Console.WriteLine();
+            Console.WriteLine(hs.tempofinal.ToString("h:mm:ss.fff tt"));
             Console.ReadLine();
+>>>>>>> 13abd6f21678b7200720b7188ee53a6c05c4cdb6
         }
+
+
     }
 }
