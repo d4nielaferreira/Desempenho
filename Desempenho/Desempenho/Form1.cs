@@ -21,5 +21,10 @@ namespace Desempenho
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Bolha cp1 = new Bolha();
+        }
     }
 }
