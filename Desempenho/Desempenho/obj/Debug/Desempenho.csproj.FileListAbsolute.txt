@@ -1,10 +1,7 @@
-C:\Users\paulo\Documents\GitHub\Desempenho\Desempenho\Desempenho\bin\Debug\Desempenho.exe.config
-C:\Users\paulo\Documents\GitHub\Desempenho\Desempenho\Desempenho\bin\Debug\Desempenho.exe
-C:\Users\paulo\Documents\GitHub\Desempenho\Desempenho\Desempenho\bin\Debug\Desempenho.pdb
-C:\Users\paulo\Documents\GitHub\Desempenho\Desempenho\Desempenho\obj\Debug\Desempenho.csprojAssemblyReference.cache
-C:\Users\paulo\Documents\GitHub\Desempenho\Desempenho\Desempenho\obj\Debug\Desempenho.Form1.resources
-C:\Users\paulo\Documents\GitHub\Desempenho\Desempenho\Desempenho\obj\Debug\Desempenho.Properties.Resources.resources
-C:\Users\paulo\Documents\GitHub\Desempenho\Desempenho\Desempenho\obj\Debug\Desempenho.csproj.GenerateResource.cache
-C:\Users\paulo\Documents\GitHub\Desempenho\Desempenho\Desempenho\obj\Debug\Desempenho.csproj.CoreCompileInputs.cache
-C:\Users\paulo\Documents\GitHub\Desempenho\Desempenho\Desempenho\obj\Debug\Desempenho.exe
-C:\Users\paulo\Documents\GitHub\Desempenho\Desempenho\Desempenho\obj\Debug\Desempenho.pdb
+C:\Users\User\source\repos\Desempenho\Desempenho\bin\Debug\Desempenho.exe.config
+C:\Users\User\source\repos\Desempenho\Desempenho\bin\Debug\Desempenho.exe
+C:\Users\User\source\repos\Desempenho\Desempenho\bin\Debug\Desempenho.pdb
+C:\Users\User\source\repos\Desempenho\Desempenho\obj\Debug\Desempenho.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Desempenho\Desempenho\obj\Debug\Desempenho.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Desempenho\Desempenho\obj\Debug\Desempenho.exe
+C:\Users\User\source\repos\Desempenho\Desempenho\obj\Debug\Desempenho.pdb
