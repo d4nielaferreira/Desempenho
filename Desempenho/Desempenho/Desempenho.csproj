@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bubble.cs" />
     <Compile Include="Binario.cs" />
     <Compile Include="HeapSort.cs" />
     <Compile Include="Program.cs" />
