@@ -11,19 +11,8 @@ namespace Ordenacao
         public static DateTime tempoinicio = DateTime.Now;
         public static DateTime tempofinal;
 
-        public QuickSort()
+        public QuickSort(int[] numeros)
         {
-            int Min = 0;
-            int Max = 100000;
-
-            int[] numeros = new int[100000];
-
-            Random randNum = new Random();
-            for (int i = 0; i < numeros.Length; i++)
-            {
-                numeros[i] = randNum.Next(Min, Max);
-            }
-
             Console.WriteLine(tempoinicio.ToString("h:mm:ss.fff tt"));
             quickSort(numeros);
 

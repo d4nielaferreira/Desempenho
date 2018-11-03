@@ -8,3 +8,14 @@ C:\Users\mravi\Documents\APS\aps4\Ordenacao\Ordenacao\obj\Debug\Desempenho.cspro
 C:\Users\mravi\Documents\APS\aps4\Ordenacao\Ordenacao\obj\Debug\Desempenho.csproj.CoreCompileInputs.cache
 C:\Users\mravi\Documents\APS\aps4\Ordenacao\Ordenacao\obj\Debug\Ordenacao.exe
 C:\Users\mravi\Documents\APS\aps4\Ordenacao\Ordenacao\obj\Debug\Ordenacao.pdb
+C:\Users\mravi\Documents\APS\aps4\Desempenho\Ordenacao\bin\Debug\Ordenacao.exe.config
+C:\Users\mravi\Documents\APS\aps4\Desempenho\Ordenacao\bin\Debug\Ordenacao.exe
+C:\Users\mravi\Documents\APS\aps4\Desempenho\Ordenacao\bin\Debug\Ordenacao.pdb
+C:\Users\mravi\Documents\APS\aps4\Desempenho\Ordenacao\obj\Debug\Desempenho.csprojAssemblyReference.cache
+C:\Users\mravi\Documents\APS\aps4\Desempenho\Ordenacao\obj\Debug\Ordenacao.Properties.Resources.resources
+C:\Users\mravi\Documents\APS\aps4\Desempenho\Ordenacao\obj\Debug\Ordenacao.Start.resources
+C:\Users\mravi\Documents\APS\aps4\Desempenho\Ordenacao\obj\Debug\Desempenho.csproj.GenerateResource.cache
+C:\Users\mravi\Documents\APS\aps4\Desempenho\Ordenacao\obj\Debug\Desempenho.csproj.CoreCompileInputs.cache
+C:\Users\mravi\Documents\APS\aps4\Desempenho\Ordenacao\obj\Debug\Ordenacao.exe
+C:\Users\mravi\Documents\APS\aps4\Desempenho\Ordenacao\obj\Debug\Ordenacao.pdb
+C:\Users\mravi\Documents\APS\aps4\Desempenho\Ordenacao\obj\Debug\Ordenacao.Ordenacao.resources

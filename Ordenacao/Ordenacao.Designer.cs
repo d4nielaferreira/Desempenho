@@ -1,6 +1,6 @@
 ﻿namespace Ordenacao
 {
-    partial class Form1
+    partial class Ordenacao
     {
         /// <summary>
         /// Required designer variable.
@@ -63,7 +63,7 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // Ordenacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -71,8 +71,9 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.Name = "Ordenacao";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Ordenacao_Load);
             this.ResumeLayout(false);
 
         }
