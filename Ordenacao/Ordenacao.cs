@@ -27,6 +27,8 @@ namespace Ordenacao
         public Ordenacao(int[] n)
         {
             numeros = n;
+
+            InitializeComponent();
         }
 
         //Chamando o métodos BubbleSort

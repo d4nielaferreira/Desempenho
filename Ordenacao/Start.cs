@@ -13,7 +13,10 @@ namespace Ordenacao
     public partial class Start : Form
     {
         //Array para armezar os valores caso o usuário escolha adicionar manualmente
-        int[] numeros;
+        int[] numeros = new int[1];
+
+        //Variavel de controle
+        int pos = 0;
 
         public Start()
         {
@@ -41,16 +44,34 @@ namespace Ordenacao
             this.textBox1.Show();
         }
 
-        //Finalizar
+        //Finalizar a operação adicionar no array e partir para a ordenação
         private void button3_Click(object sender, EventArgs e)
         {
             Ordenacao ordernar = new Ordenacao(numeros);
+
+            ordernar.Show();
         }
 
-        //Adicionar
+        //Adicionar os valores no Array
         private void button4_Click(object sender, EventArgs e)
         {
+            //Crescer o Array em tempo de execução
+            Array.Resize(ref numeros, numeros.Length + 1);
 
+            //Capturando o valor no campo texto e trazendo para o array
+            numeros[pos] = int.Parse(this.textBox1.Text);
+            
+            //Teste de impressão para ver se estar funcionando
+            for (int i = 0; i < numeros.Length; i++)
+            {
+                Console.Write(numeros[i] + ", ");
+            }
+            Console.WriteLine(" ");
+
+            this.textBox1.Clear();
+
+            //incrementando uma posicão no array
+            pos++;
         }
 
         //Campo texto
