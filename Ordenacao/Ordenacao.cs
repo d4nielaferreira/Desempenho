@@ -15,19 +15,18 @@ namespace Ordenacao
         //iniciando o array para armezar os números a serem ordenados
         int[] numeros;
 
-        public Ordenacao(string o)
+        //Método construtor para quando for aleatório
+        public Ordenacao()
         {
-            //Escolher qual números serão utilizados
-            if(o == "aleatorio")
-            {
-                numeros = aleatorio();
-            }
-            else
-            {
-
-            }
+            numeros = aleatorio();
 
             InitializeComponent();
+        }
+
+        //Método construtor para quando os números forem do usuário
+        public Ordenacao(int[] n)
+        {
+            numeros = n;
         }
 
         //Chamando o métodos BubbleSort

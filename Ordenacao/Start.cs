@@ -12,6 +12,9 @@ namespace Ordenacao
 {
     public partial class Start : Form
     {
+        //Array para armezar os valores caso o usuário escolha adicionar manualmente
+        int[] numeros;
+
         public Start()
         {
             InitializeComponent();
@@ -20,7 +23,7 @@ namespace Ordenacao
         //Chamar o menu Ordenacao.cs com números aleatórios
         private void button1_Click(object sender, EventArgs e)
         {
-            Ordenacao ordernar = new Ordenacao("aleatorio");
+            Ordenacao ordernar = new Ordenacao();
 
             ordernar.Show();
         }
@@ -28,9 +31,6 @@ namespace Ordenacao
         //Chamar o menu Ordenacao.cs com números informados pelo usuário
         private void button2_Click(object sender, EventArgs e)
         {
-            //Ordenacao ordernar = new Ordenacao("usuario");
-            //ordernar.Show();
-
             //Ocultar os botões que não serão mais utilizados (Gerar números aleatórios, Adicionar valores)
             this.button1.Hide();
             this.button2.Hide();
@@ -44,7 +44,7 @@ namespace Ordenacao
         //Finalizar
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Ordenacao ordernar = new Ordenacao(numeros);
         }
 
         //Adicionar
