@@ -38,7 +38,7 @@ namespace Ordenacao
             opcoesButtons1_2("Hide");
 
             //Mostrar os botões Adicionar e Finalizar e o campo texto
-            opcoesButtons3_4("Show");
+            opcoesButtons3_4_5("Show");
         }
 
         //Finalizar a operação adicionar no array e partir para a ordenação caso já tenha um valor inserido
@@ -71,6 +71,19 @@ namespace Ordenacao
             Console.WriteLine(" ");
 
             this.textBox1.Clear();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            opcoesButtons1_2("Show");
+            opcoesButtons3_4_5("Hide");
+
+        }
+
+        //Ação a executar ao carregar a janela
+        private void Start_Load(object sender, EventArgs e)
+        {
+            opcoesButtons3_4_5("Hide");
         }
 
         //Método para gravar os valores no Array
@@ -113,19 +126,21 @@ namespace Ordenacao
             }
         }
 
-        //Método para esconder ou mostrar os botões Adicionar e Finalizar e o campo texto.
-        private void opcoesButtons3_4(string op)
+        //Método para esconder ou mostrar os botões Adicionar, Finalizar e voltar, e o campo texto.
+        private void opcoesButtons3_4_5(string op)
         {
             if (op == "Hide")
             {
                 this.button3.Hide();
                 this.button4.Hide();
+                this.button5.Hide();
                 this.textBox1.Hide();
             }
             else
             {
                 this.button3.Show();
                 this.button4.Show();
+                this.button5.Show();
                 this.textBox1.Show();
             }
         }
