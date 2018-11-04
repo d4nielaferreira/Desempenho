@@ -126,6 +126,11 @@ namespace Ordenacao
             }
         }
 
+        private void fontDialog1_Apply(object sender, EventArgs e)
+        {
+
+        }
+
         //Método para esconder ou mostrar os botões Adicionar, Finalizar e voltar, e o campo texto.
         private void opcoesButtons3_4_5(string op)
         {
