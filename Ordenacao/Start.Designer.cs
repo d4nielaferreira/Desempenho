@@ -28,84 +28,84 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnAleat = new System.Windows.Forms.Button();
+            this.btnAdValores = new System.Windows.Forms.Button();
+            this.btnFinalizar = new System.Windows.Forms.Button();
+            this.btnAdicionar = new System.Windows.Forms.Button();
+            this.campValores = new System.Windows.Forms.TextBox();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnAleat
             // 
-            this.button1.Location = new System.Drawing.Point(11, 76);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Gerar números aleatórios";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnAleat.Location = new System.Drawing.Point(11, 76);
+            this.btnAleat.Name = "btnAleat";
+            this.btnAleat.Size = new System.Drawing.Size(142, 23);
+            this.btnAleat.TabIndex = 0;
+            this.btnAleat.Text = "Gerar números aleatórios";
+            this.btnAleat.UseVisualStyleBackColor = true;
+            this.btnAleat.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnAdValores
             // 
-            this.button2.Location = new System.Drawing.Point(184, 76);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(145, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Adicionar valores";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnAdValores.Location = new System.Drawing.Point(184, 76);
+            this.btnAdValores.Name = "btnAdValores";
+            this.btnAdValores.Size = new System.Drawing.Size(145, 23);
+            this.btnAdValores.TabIndex = 1;
+            this.btnAdValores.Text = "Adicionar valores";
+            this.btnAdValores.UseVisualStyleBackColor = true;
+            this.btnAdValores.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btnFinalizar
             // 
-            this.button3.Location = new System.Drawing.Point(254, 76);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Finalizar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnFinalizar.Location = new System.Drawing.Point(254, 76);
+            this.btnFinalizar.Name = "btnFinalizar";
+            this.btnFinalizar.Size = new System.Drawing.Size(75, 23);
+            this.btnFinalizar.TabIndex = 2;
+            this.btnFinalizar.Text = "Finalizar";
+            this.btnFinalizar.UseVisualStyleBackColor = true;
+            this.btnFinalizar.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // btnAdicionar
             // 
-            this.button4.Location = new System.Drawing.Point(173, 76);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Adicionar";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnAdicionar.Location = new System.Drawing.Point(173, 76);
+            this.btnAdicionar.Name = "btnAdicionar";
+            this.btnAdicionar.Size = new System.Drawing.Size(75, 23);
+            this.btnAdicionar.TabIndex = 3;
+            this.btnAdicionar.Text = "Adicionar";
+            this.btnAdicionar.UseVisualStyleBackColor = true;
+            this.btnAdicionar.Click += new System.EventHandler(this.button4_Click);
             // 
-            // textBox1
+            // campValores
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 78);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(141, 20);
-            this.textBox1.TabIndex = 4;
+            this.campValores.Location = new System.Drawing.Point(12, 78);
+            this.campValores.Name = "campValores";
+            this.campValores.Size = new System.Drawing.Size(141, 20);
+            this.campValores.TabIndex = 4;
             // 
-            // button5
+            // btnVoltar
             // 
-            this.button5.Location = new System.Drawing.Point(11, 13);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(51, 23);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Voltar";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnVoltar.Location = new System.Drawing.Point(11, 13);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(51, 23);
+            this.btnVoltar.TabIndex = 5;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.button5_Click);
             // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(342, 111);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnVoltar);
+            this.Controls.Add(this.campValores);
+            this.Controls.Add(this.btnAdicionar);
+            this.Controls.Add(this.btnFinalizar);
+            this.Controls.Add(this.btnAdValores);
+            this.Controls.Add(this.btnAleat);
             this.Name = "Start";
-            this.Text = "Start";
+            this.Text = "Ordenação";
             this.Load += new System.EventHandler(this.Start_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -114,11 +114,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnAleat;
+        private System.Windows.Forms.Button btnAdValores;
+        private System.Windows.Forms.Button btnFinalizar;
+        private System.Windows.Forms.Button btnAdicionar;
+        private System.Windows.Forms.TextBox campValores;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }

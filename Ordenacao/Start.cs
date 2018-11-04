@@ -70,7 +70,7 @@ namespace Ordenacao
             }
             Console.WriteLine(" ");
 
-            this.textBox1.Clear();
+            this.campValores.Clear();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -90,7 +90,7 @@ namespace Ordenacao
         private void gravaArray (int[] n)
         {
             //Verificação se o valor informado pelo usuário é numérico
-            if (int.TryParse(this.textBox1.Text, out i))
+            if (int.TryParse(this.campValores.Text, out i))
             {
                 //If para aumentar o array em tempo de execução caso necessário
                 if (pos > 0)
@@ -100,7 +100,7 @@ namespace Ordenacao
                 }
 
                 //Capturando o valor no campo texto e trazendo para o array
-                numeros[pos] = int.Parse(this.textBox1.Text);
+                numeros[pos] = int.Parse(this.campValores.Text);
 
                 //Passando para a próxima posição do array
                 pos++;
@@ -116,13 +116,13 @@ namespace Ordenacao
         {
             if(op == "Hide")
             {
-                this.button1.Hide();
-                this.button2.Hide();
+                this.btnAleat.Hide();
+                this.btnAdValores.Hide();
             }
             else
             {
-                this.button1.Show();
-                this.button2.Show();
+                this.btnAleat.Show();
+                this.btnAdValores.Show();
             }
         }
 
@@ -131,17 +131,17 @@ namespace Ordenacao
         {
             if (op == "Hide")
             {
-                this.button3.Hide();
-                this.button4.Hide();
-                this.button5.Hide();
-                this.textBox1.Hide();
+                this.btnFinalizar.Hide();
+                this.btnAdicionar.Hide();
+                this.btnVoltar.Hide();
+                this.campValores.Hide();
             }
             else
             {
-                this.button3.Show();
-                this.button4.Show();
-                this.button5.Show();
-                this.textBox1.Show();
+                this.btnFinalizar.Show();
+                this.btnAdicionar.Show();
+                this.btnVoltar.Show();
+                this.campValores.Show();
             }
         }
     }
