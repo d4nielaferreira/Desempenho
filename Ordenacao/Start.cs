@@ -35,21 +35,26 @@ namespace Ordenacao
         private void button2_Click(object sender, EventArgs e)
         {
             //Ocultar os botões que não serão mais utilizados (Gerar números aleatórios, Adicionar valores)
-            this.button1.Hide();
-            this.button2.Hide();
+            opcoesButtons1_2("Hide");
 
             //Mostrar os botões Adicionar e Finalizar e o campo texto
-            this.button3.Show();
-            this.button4.Show();
-            this.textBox1.Show();
+            opcoesButtons3_4("Show");
         }
 
-        //Finalizar a operação adicionar no array e partir para a ordenação
+        //Finalizar a operação adicionar no array e partir para a ordenação caso já tenha um valor inserido
         private void button3_Click(object sender, EventArgs e)
         {
-            Ordenacao ordernar = new Ordenacao(numeros);
+            //Verificação se já foi inserido um valor no array
+            if(pos > 0)
+            {
+                Ordenacao ordernar = new Ordenacao(numeros);
 
-            ordernar.Show();
+                ordernar.Show();
+            }
+            else
+            {
+                Console.WriteLine("Favor insira um valor primeiro");
+            }
         }
 
         //Adicionar os valores no Array
@@ -91,7 +96,38 @@ namespace Ordenacao
             {
                 Console.WriteLine("O valor informado não é numérico");
             }
+        }
 
+        //Método para esconder ou mostrar os botões números aleatórios, Adicionar valores.
+        private void opcoesButtons1_2(string op)
+        {
+            if(op == "Hide")
+            {
+                this.button1.Hide();
+                this.button2.Hide();
+            }
+            else
+            {
+                this.button1.Show();
+                this.button2.Show();
+            }
+        }
+
+        //Método para esconder ou mostrar os botões Adicionar e Finalizar e o campo texto.
+        private void opcoesButtons3_4(string op)
+        {
+            if (op == "Hide")
+            {
+                this.button3.Hide();
+                this.button4.Hide();
+                this.textBox1.Hide();
+            }
+            else
+            {
+                this.button3.Show();
+                this.button4.Show();
+                this.textBox1.Show();
+            }
         }
     }
 }
