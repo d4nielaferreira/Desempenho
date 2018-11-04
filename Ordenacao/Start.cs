@@ -16,7 +16,7 @@ namespace Ordenacao
         int[] numeros = new int[1];
 
         //Variavel de controle
-        int pos = 0;
+        int pos = 0, i = 0;
 
         public Start()
         {
@@ -55,28 +55,42 @@ namespace Ordenacao
         //Adicionar os valores no Array
         private void button4_Click(object sender, EventArgs e)
         {
-            //Crescer o Array em tempo de execução
-            Array.Resize(ref numeros, numeros.Length + 1);
+            //Chamada do método para gravar os valores no array
+            gravaArray(numeros);
 
-            //Capturando o valor no campo texto e trazendo para o array
-            numeros[pos] = int.Parse(this.textBox1.Text);
-            
             //Teste de impressão para ver se estar funcionando
-            for (int i = 0; i < numeros.Length; i++)
+            for (i = 0; i < numeros.Length; i++)
             {
                 Console.Write(numeros[i] + ", ");
             }
             Console.WriteLine(" ");
 
             this.textBox1.Clear();
-
-            //incrementando uma posicão no array
-            pos++;
         }
 
-        //Campo texto
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        //Método para gravar os valores no Array
+        private void gravaArray (int[] n)
         {
+            //Verificação se o valor informado pelo usuário é numérico
+            if (int.TryParse(this.textBox1.Text, out i))
+            {
+                //If para aumentar o array em tempo de execução caso necessário
+                if (pos > 0)
+                {
+                    //Crescer o Array em tempo de execução
+                    Array.Resize(ref numeros, numeros.Length + 1);
+                }
+
+                //Capturando o valor no campo texto e trazendo para o array
+                numeros[pos] = int.Parse(this.textBox1.Text);
+
+                //Passando para a próxima posição do array
+                pos++;
+            }
+            else
+            {
+                Console.WriteLine("O valor informado não é numérico");
+            }
 
         }
     }
