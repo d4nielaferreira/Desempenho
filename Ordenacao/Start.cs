@@ -39,6 +39,10 @@ namespace Ordenacao
 
             //Mostrar os botões Adicionar e Finalizar e o campo texto
             opcoesButtons3_4_5("Show");
+
+            //oculta as menssagens de erro
+            this.numNaoInformado.Hide();
+            this.valorErrado.Hide();
         }
 
         //Finalizar a operação adicionar no array e partir para a ordenação caso já tenha um valor inserido
@@ -53,7 +57,8 @@ namespace Ordenacao
             }
             else
             {
-                Console.WriteLine("Favor insira um valor primeiro");
+                this.valorErrado.Hide();
+                this.numNaoInformado.Show();
             }
         }
 
@@ -84,6 +89,8 @@ namespace Ordenacao
         private void Start_Load(object sender, EventArgs e)
         {
             opcoesButtons3_4_5("Hide");
+            this.valorErrado.Hide();
+            this.numNaoInformado.Hide();
         }
 
         //Método para gravar os valores no Array
@@ -104,10 +111,15 @@ namespace Ordenacao
 
                 //Passando para a próxima posição do array
                 pos++;
+
+                //oculta as menssagens de erro
+                this.valorErrado.Hide();
+                this.numNaoInformado.Hide();
             }
             else
             {
-                Console.WriteLine("O valor informado não é numérico");
+                this.numNaoInformado.Hide();
+                this.valorErrado.Show();
             }
         }
 
@@ -124,11 +136,6 @@ namespace Ordenacao
                 this.btnAleat.Show();
                 this.btnAdValores.Show();
             }
-        }
-
-        private void fontDialog1_Apply(object sender, EventArgs e)
-        {
-
         }
 
         //Método para esconder ou mostrar os botões Adicionar, Finalizar e voltar, e o campo texto.

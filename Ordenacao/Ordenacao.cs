@@ -42,7 +42,7 @@ namespace Ordenacao
         private void button2_Click(object sender, EventArgs e)
         {
             //Passando os valores aleatórios
-            HeapSort quick = new HeapSort();
+            HeapSort quick = new HeapSort(numeros);
         }
 
         //Chamando o métodos quicksort

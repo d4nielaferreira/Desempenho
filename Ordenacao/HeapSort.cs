@@ -12,20 +12,9 @@ namespace Ordenacao
         public DateTime tempoinicio = DateTime.Now;
         public DateTime tempofinal;
 
-        public HeapSort()
+        public HeapSort(int[] vetor)
         {
             Console.WriteLine(tempoinicio.ToString("h:mm:ss.fff tt"));
-            int Min = 0;
-            int Max = 100000;
-
-            int[] vetor = new int[100000];
-
-            Random randNum = new Random();
-
-            for (int i = 0; i < vetor.Length; i++)
-            {
-                vetor[i] = randNum.Next(Min, Max);
-            }
 
             PerformHeapSort(vetor);
 

@@ -20,13 +20,6 @@ namespace Ordenacao
 
             tempofinal = DateTime.Now;
 
-            //Teste de impressão para ver se estar funcionando
-            for (int i = 0; i < numeros.Length; i++)
-            {
-                Console.Write(numeros[i] + ", ");
-            }
-            Console.WriteLine(" ");
-
             Console.WriteLine(tempofinal.ToString("h:mm:ss.fff tt"));
         }
 
