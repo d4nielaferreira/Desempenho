@@ -9,17 +9,20 @@ namespace Ordenacao
     class HeapSort
     {
         private int heapSize;
-        public DateTime tempoinicio = DateTime.Now;
-        public DateTime tempofinal;
+        private DateTime tempoinicio = DateTime.Now;
+        private DateTime tempofinal;
+
+        public string inicio;
+        public string final;
 
         public HeapSort(int[] vetor)
         {
-            Console.WriteLine(tempoinicio.ToString("h:mm:ss.fff tt"));
+            inicio = tempoinicio.ToString("hh:mm:ss.fff tt");
 
             PerformHeapSort(vetor);
 
             tempofinal = DateTime.Now;
-            Console.WriteLine(tempofinal.ToString("h:mm:ss.fff tt"));
+            final = tempofinal.ToString("hh:mm:ss.fff tt");
         }
 
         private void BuildHeap(int[] arr)

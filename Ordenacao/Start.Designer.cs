@@ -34,8 +34,7 @@
             this.btnAdicionar = new System.Windows.Forms.Button();
             this.campValores = new System.Windows.Forms.TextBox();
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.valorErrado = new System.Windows.Forms.Label();
-            this.numNaoInformado = new System.Windows.Forms.Label();
+            this.Alerta = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnAleat
@@ -95,33 +94,22 @@
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.button5_Click);
             // 
-            // valorErrado
+            // Alerta
             // 
-            this.valorErrado.AutoSize = true;
-            this.valorErrado.ForeColor = System.Drawing.Color.Red;
-            this.valorErrado.Location = new System.Drawing.Point(13, 59);
-            this.valorErrado.Name = "valorErrado";
-            this.valorErrado.Size = new System.Drawing.Size(148, 13);
-            this.valorErrado.TabIndex = 6;
-            this.valorErrado.Text = "Favor digite um número válido";
-            // 
-            // numNaoInformado
-            // 
-            this.numNaoInformado.AutoSize = true;
-            this.numNaoInformado.ForeColor = System.Drawing.Color.Red;
-            this.numNaoInformado.Location = new System.Drawing.Point(11, 59);
-            this.numNaoInformado.Name = "numNaoInformado";
-            this.numNaoInformado.Size = new System.Drawing.Size(143, 13);
-            this.numNaoInformado.TabIndex = 7;
-            this.numNaoInformado.Text = "Favor insira um valor primeiro";
+            this.Alerta.AutoSize = true;
+            this.Alerta.ForeColor = System.Drawing.Color.Red;
+            this.Alerta.Location = new System.Drawing.Point(13, 59);
+            this.Alerta.Name = "Alerta";
+            this.Alerta.Size = new System.Drawing.Size(99, 13);
+            this.Alerta.TabIndex = 6;
+            this.Alerta.Text = "Mensagens de Erro";
             // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(342, 111);
-            this.Controls.Add(this.numNaoInformado);
-            this.Controls.Add(this.valorErrado);
+            this.Controls.Add(this.Alerta);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.campValores);
             this.Controls.Add(this.btnAdicionar);
@@ -144,7 +132,6 @@
         private System.Windows.Forms.Button btnAdicionar;
         private System.Windows.Forms.TextBox campValores;
         private System.Windows.Forms.Button btnVoltar;
-        private System.Windows.Forms.Label valorErrado;
-        private System.Windows.Forms.Label numNaoInformado;
+        private System.Windows.Forms.Label Alerta;
     }
 }

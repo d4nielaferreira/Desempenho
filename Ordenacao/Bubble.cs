@@ -8,20 +8,22 @@ namespace Ordenacao
 {
     class Bubble
     {
-        public static DateTime tempoinicio = DateTime.Now;
-        public static DateTime tempofinal;
+        private static DateTime tempoinicio;
+        private static DateTime tempofinal;
+
+        public string inicio;
+        public string final;
+
         public Bubble(int[] vetor)
         {
-            Console.WriteLine("Ordenação Bolha");
-            Console.WriteLine(tempoinicio.ToString("h:mm:ss.fff tt"));
+            tempoinicio = DateTime.Now;
+            inicio = tempoinicio.ToString("hh:mm:ss.fff tt");
 
             Bolha(vetor);
 
-            //for (int i = 0; i < vetor.Length; i++)
-            //Console.WriteLine(vetor[i]);
             tempofinal = DateTime.Now;
-            Console.WriteLine(tempofinal.ToString("h:mm:ss.fff tt"));
-            
+            final = tempofinal.ToString("hh:mm:ss.fff tt");
+
         }
 
         static void Bolha(int[] arr)

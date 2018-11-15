@@ -41,8 +41,7 @@ namespace Ordenacao
             opcoesButtons3_4_5("Show");
 
             //oculta as menssagens de erro
-            this.numNaoInformado.Hide();
-            this.valorErrado.Hide();
+            this.Alerta.Hide();
         }
 
         //Finalizar a operação adicionar no array e partir para a ordenação caso já tenha um valor inserido
@@ -57,8 +56,8 @@ namespace Ordenacao
             }
             else
             {
-                this.valorErrado.Hide();
-                this.numNaoInformado.Show();
+                this.Alerta.Show();
+                Alerta.Text = "Favor insira um valor primeiro";
             }
         }
 
@@ -89,8 +88,7 @@ namespace Ordenacao
         private void Start_Load(object sender, EventArgs e)
         {
             opcoesButtons3_4_5("Hide");
-            this.valorErrado.Hide();
-            this.numNaoInformado.Hide();
+            this.Alerta.Hide();
         }
 
         //Método para gravar os valores no Array
@@ -113,13 +111,12 @@ namespace Ordenacao
                 pos++;
 
                 //oculta as menssagens de erro
-                this.valorErrado.Hide();
-                this.numNaoInformado.Hide();
+                this.Alerta.Hide();
             }
             else
             {
-                this.numNaoInformado.Hide();
-                this.valorErrado.Show();
+                this.Alerta.Show();
+                this.Alerta.Text = "Favor digite um número válido";
             }
         }
 

@@ -8,26 +8,28 @@ namespace Ordenacao
 {
     class QuickSort
     {
-        public static DateTime tempoinicio = DateTime.Now;
-        public static DateTime tempofinal;
+        private DateTime tempoinicio;
+        private DateTime tempofinal;
+
+        public string inicio;
+        public string final;
 
         public QuickSort(int[] numeros)
         {
-            Console.WriteLine("Ordenação QuickSort");
+            tempoinicio = DateTime.Now;
+            inicio = tempoinicio.ToString("hh:mm:ss.fff tt");
 
-            Console.WriteLine(tempoinicio.ToString("h:mm:ss.fff tt"));
             quickSort(numeros);
 
             tempofinal = DateTime.Now;
-
-            Console.WriteLine(tempofinal.ToString("h:mm:ss.fff tt"));
+            final = tempofinal.ToString("hh:mm:ss.fff tt");
         }
 
-        public static int[] quickSort(int[] vetor)
+        private static int[] quickSort(int[] vetor)
         {
             int inicio = 0;
             int fim = vetor.Length - 1;
-
+            
             quickSort(vetor, inicio, fim);
 
             return vetor;
@@ -35,7 +37,6 @@ namespace Ordenacao
 
         private static void quickSort(int[] vetor, int inicio, int fim)
         {
-
             if (inicio < fim)
             {
                 int p = vetor[inicio];
@@ -73,6 +74,7 @@ namespace Ordenacao
                 quickSort(vetor, inicio, f - 1);
 
                 quickSort(vetor, f + 1, fim);
+                Console.WriteLine(vetor.Length);
             }
         }
     }

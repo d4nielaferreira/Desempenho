@@ -36,20 +36,29 @@ namespace Ordenacao
         {
             //Passando os valores aleatórios
             Bubble bubble = new Bubble(numeros);
+
+            bInicio.Text = "Horário de inicio: " + bubble.inicio;
+            bFinal.Text = "Horário final: " + bubble.final;
         }
 
         //Chamando o métodos HeapSort
         private void button2_Click(object sender, EventArgs e)
         {
             //Passando os valores aleatórios
-            HeapSort quick = new HeapSort(numeros);
+            HeapSort heap = new HeapSort(numeros);
+
+            hInicio.Text = "Horário de inicio: " + heap.inicio;
+            hFinal.Text = "Horário final: " + heap.final;
         }
 
         //Chamando o métodos quicksort
         private void button3_Click(object sender, EventArgs e)
         {
             //Passando os valores aleatórios
-            QuickSort heap = new QuickSort(numeros);
+            QuickSort quick = new QuickSort(numeros);
+
+            qInicio.Text = "Horário de inicio: " + quick.inicio;
+            qFinal.Text = "Horário final: " + quick.final;
         }
 
         //Método para gerar os números aleatóriamente

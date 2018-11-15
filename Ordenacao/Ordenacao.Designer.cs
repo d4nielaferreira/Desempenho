@@ -28,60 +28,134 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.QuickSort = new System.Windows.Forms.Button();
+            this.HeadpSort = new System.Windows.Forms.Button();
+            this.BubbleSort = new System.Windows.Forms.Button();
+            this.bInicio = new System.Windows.Forms.Label();
+            this.bFinal = new System.Windows.Forms.Label();
+            this.hInicio = new System.Windows.Forms.Label();
+            this.hFinal = new System.Windows.Forms.Label();
+            this.qInicio = new System.Windows.Forms.Label();
+            this.qFinal = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button3
+            // QuickSort
             // 
-            this.button3.Location = new System.Drawing.Point(266, 105);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "QuickSort";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.QuickSort.Location = new System.Drawing.Point(333, 12);
+            this.QuickSort.Name = "QuickSort";
+            this.QuickSort.Size = new System.Drawing.Size(75, 23);
+            this.QuickSort.TabIndex = 5;
+            this.QuickSort.Text = "QuickSort";
+            this.QuickSort.UseVisualStyleBackColor = true;
+            this.QuickSort.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // HeadpSort
             // 
-            this.button2.Location = new System.Drawing.Point(140, 105);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "HeadpSort";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.HeadpSort.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
+            this.HeadpSort.Location = new System.Drawing.Point(170, 12);
+            this.HeadpSort.Name = "HeadpSort";
+            this.HeadpSort.Size = new System.Drawing.Size(75, 23);
+            this.HeadpSort.TabIndex = 4;
+            this.HeadpSort.Text = "HeadpSort";
+            this.HeadpSort.UseVisualStyleBackColor = true;
+            this.HeadpSort.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // BubbleSort
             // 
-            this.button1.Location = new System.Drawing.Point(16, 105);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "BubbleSort";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BubbleSort.Location = new System.Drawing.Point(11, 12);
+            this.BubbleSort.Name = "BubbleSort";
+            this.BubbleSort.Size = new System.Drawing.Size(75, 23);
+            this.BubbleSort.TabIndex = 3;
+            this.BubbleSort.Text = "BubbleSort";
+            this.BubbleSort.UseVisualStyleBackColor = true;
+            this.BubbleSort.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // bInicio
+            // 
+            this.bInicio.AutoSize = true;
+            this.bInicio.Location = new System.Drawing.Point(11, 51);
+            this.bInicio.Name = "bInicio";
+            this.bInicio.Size = new System.Drawing.Size(83, 13);
+            this.bInicio.TabIndex = 6;
+            this.bInicio.Text = "Horário de inicio";
+            // 
+            // bFinal
+            // 
+            this.bFinal.AutoSize = true;
+            this.bFinal.Location = new System.Drawing.Point(11, 78);
+            this.bFinal.Name = "bFinal";
+            this.bFinal.Size = new System.Drawing.Size(63, 13);
+            this.bFinal.TabIndex = 7;
+            this.bFinal.Text = "Horário final";
+            // 
+            // hInicio
+            // 
+            this.hInicio.AutoSize = true;
+            this.hInicio.Location = new System.Drawing.Point(167, 51);
+            this.hInicio.Name = "hInicio";
+            this.hInicio.Size = new System.Drawing.Size(83, 13);
+            this.hInicio.TabIndex = 8;
+            this.hInicio.Text = "Horário de inicio";
+            // 
+            // hFinal
+            // 
+            this.hFinal.AutoSize = true;
+            this.hFinal.Location = new System.Drawing.Point(167, 78);
+            this.hFinal.Name = "hFinal";
+            this.hFinal.Size = new System.Drawing.Size(63, 13);
+            this.hFinal.TabIndex = 9;
+            this.hFinal.Text = "Horário final";
+            // 
+            // qInicio
+            // 
+            this.qInicio.AutoSize = true;
+            this.qInicio.Location = new System.Drawing.Point(330, 51);
+            this.qInicio.Name = "qInicio";
+            this.qInicio.Size = new System.Drawing.Size(83, 13);
+            this.qInicio.TabIndex = 10;
+            this.qInicio.Text = "Horário de inicio";
+            // 
+            // qFinal
+            // 
+            this.qFinal.AutoSize = true;
+            this.qFinal.Location = new System.Drawing.Point(330, 78);
+            this.qFinal.Name = "qFinal";
+            this.qFinal.Size = new System.Drawing.Size(63, 13);
+            this.qFinal.TabIndex = 11;
+            this.qFinal.Text = "Horário final";
             // 
             // Ordenacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(365, 150);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(484, 95);
+            this.Controls.Add(this.qFinal);
+            this.Controls.Add(this.qInicio);
+            this.Controls.Add(this.hFinal);
+            this.Controls.Add(this.hInicio);
+            this.Controls.Add(this.bFinal);
+            this.Controls.Add(this.bInicio);
+            this.Controls.Add(this.QuickSort);
+            this.Controls.Add(this.HeadpSort);
+            this.Controls.Add(this.BubbleSort);
             this.Name = "Ordenacao";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button QuickSort;
+        private System.Windows.Forms.Button HeadpSort;
+        private System.Windows.Forms.Button BubbleSort;
+        private System.Windows.Forms.Label bInicio;
+        private System.Windows.Forms.Label bFinal;
+        private System.Windows.Forms.Label hInicio;
+        private System.Windows.Forms.Label hFinal;
+        private System.Windows.Forms.Label qInicio;
+        private System.Windows.Forms.Label qFinal;
     }
 }
 
