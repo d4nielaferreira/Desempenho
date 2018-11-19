@@ -31,17 +31,14 @@
             this.QuickSort = new System.Windows.Forms.Button();
             this.HeadpSort = new System.Windows.Forms.Button();
             this.BubbleSort = new System.Windows.Forms.Button();
-            this.bInicio = new System.Windows.Forms.Label();
             this.bFinal = new System.Windows.Forms.Label();
-            this.hInicio = new System.Windows.Forms.Label();
             this.hFinal = new System.Windows.Forms.Label();
-            this.qInicio = new System.Windows.Forms.Label();
             this.qFinal = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // QuickSort
             // 
-            this.QuickSort.Location = new System.Drawing.Point(333, 12);
+            this.QuickSort.Location = new System.Drawing.Point(367, 24);
             this.QuickSort.Name = "QuickSort";
             this.QuickSort.Size = new System.Drawing.Size(75, 23);
             this.QuickSort.TabIndex = 5;
@@ -52,7 +49,7 @@
             // HeadpSort
             // 
             this.HeadpSort.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
-            this.HeadpSort.Location = new System.Drawing.Point(170, 12);
+            this.HeadpSort.Location = new System.Drawing.Point(204, 24);
             this.HeadpSort.Name = "HeadpSort";
             this.HeadpSort.Size = new System.Drawing.Size(75, 23);
             this.HeadpSort.TabIndex = 4;
@@ -62,7 +59,7 @@
             // 
             // BubbleSort
             // 
-            this.BubbleSort.Location = new System.Drawing.Point(11, 12);
+            this.BubbleSort.Location = new System.Drawing.Point(45, 24);
             this.BubbleSort.Name = "BubbleSort";
             this.BubbleSort.Size = new System.Drawing.Size(75, 23);
             this.BubbleSort.TabIndex = 3;
@@ -70,76 +67,49 @@
             this.BubbleSort.UseVisualStyleBackColor = true;
             this.BubbleSort.Click += new System.EventHandler(this.button1_Click);
             // 
-            // bInicio
-            // 
-            this.bInicio.AutoSize = true;
-            this.bInicio.Location = new System.Drawing.Point(11, 51);
-            this.bInicio.Name = "bInicio";
-            this.bInicio.Size = new System.Drawing.Size(83, 13);
-            this.bInicio.TabIndex = 6;
-            this.bInicio.Text = "Horário de inicio";
-            // 
             // bFinal
             // 
             this.bFinal.AutoSize = true;
-            this.bFinal.Location = new System.Drawing.Point(11, 78);
+            this.bFinal.Location = new System.Drawing.Point(42, 63);
             this.bFinal.Name = "bFinal";
-            this.bFinal.Size = new System.Drawing.Size(63, 13);
+            this.bFinal.Size = new System.Drawing.Size(51, 13);
             this.bFinal.TabIndex = 7;
-            this.bFinal.Text = "Horário final";
-            // 
-            // hInicio
-            // 
-            this.hInicio.AutoSize = true;
-            this.hInicio.Location = new System.Drawing.Point(167, 51);
-            this.hInicio.Name = "hInicio";
-            this.hInicio.Size = new System.Drawing.Size(83, 13);
-            this.hInicio.TabIndex = 8;
-            this.hInicio.Text = "Horário de inicio";
+            this.bFinal.Text = "Duração:";
+            this.bFinal.Click += new System.EventHandler(this.bFinal_Click);
             // 
             // hFinal
             // 
             this.hFinal.AutoSize = true;
-            this.hFinal.Location = new System.Drawing.Point(167, 78);
+            this.hFinal.Location = new System.Drawing.Point(201, 63);
             this.hFinal.Name = "hFinal";
-            this.hFinal.Size = new System.Drawing.Size(63, 13);
+            this.hFinal.Size = new System.Drawing.Size(51, 13);
             this.hFinal.TabIndex = 9;
-            this.hFinal.Text = "Horário final";
-            // 
-            // qInicio
-            // 
-            this.qInicio.AutoSize = true;
-            this.qInicio.Location = new System.Drawing.Point(330, 51);
-            this.qInicio.Name = "qInicio";
-            this.qInicio.Size = new System.Drawing.Size(83, 13);
-            this.qInicio.TabIndex = 10;
-            this.qInicio.Text = "Horário de inicio";
+            this.hFinal.Text = "Duração:";
             // 
             // qFinal
             // 
             this.qFinal.AutoSize = true;
-            this.qFinal.Location = new System.Drawing.Point(330, 78);
+            this.qFinal.Location = new System.Drawing.Point(364, 63);
             this.qFinal.Name = "qFinal";
-            this.qFinal.Size = new System.Drawing.Size(63, 13);
+            this.qFinal.Size = new System.Drawing.Size(51, 13);
             this.qFinal.TabIndex = 11;
-            this.qFinal.Text = "Horário final";
+            this.qFinal.Text = "Duração:";
+            this.qFinal.Click += new System.EventHandler(this.qFinal_Click);
             // 
             // Ordenacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 95);
+            this.ClientSize = new System.Drawing.Size(484, 91);
             this.Controls.Add(this.qFinal);
-            this.Controls.Add(this.qInicio);
             this.Controls.Add(this.hFinal);
-            this.Controls.Add(this.hInicio);
             this.Controls.Add(this.bFinal);
-            this.Controls.Add(this.bInicio);
             this.Controls.Add(this.QuickSort);
             this.Controls.Add(this.HeadpSort);
             this.Controls.Add(this.BubbleSort);
             this.Name = "Ordenacao";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Ordenacao_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,11 +120,8 @@
         private System.Windows.Forms.Button QuickSort;
         private System.Windows.Forms.Button HeadpSort;
         private System.Windows.Forms.Button BubbleSort;
-        private System.Windows.Forms.Label bInicio;
         private System.Windows.Forms.Label bFinal;
-        private System.Windows.Forms.Label hInicio;
         private System.Windows.Forms.Label hFinal;
-        private System.Windows.Forms.Label qInicio;
         private System.Windows.Forms.Label qFinal;
     }
 }

@@ -3,79 +3,62 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace Ordenacao
 {
     class QuickSort
     {
-        private DateTime tempoinicio;
-        private DateTime tempofinal;
-
-        public string inicio;
         public string final;
 
         public QuickSort(int[] numeros)
         {
-            tempoinicio = DateTime.Now;
-            inicio = tempoinicio.ToString("hh:mm:ss.fff tt");
+            Stopwatch timer  = new Stopwatch();
 
-            quickSort(numeros);
+            timer.Start();
 
-            tempofinal = DateTime.Now;
-            final = tempofinal.ToString("hh:mm:ss.fff tt");
-        }
-
-        private static int[] quickSort(int[] vetor)
-        {
-            int inicio = 0;
-            int fim = vetor.Length - 1;
+            quickSortRecursive(numeros, 0, numeros.Length -1);
+            timer.Stop();
             
-            quickSort(vetor, inicio, fim);
-
-            return vetor;
+            final = timer.ElapsedMilliseconds.ToString();
         }
 
-        private static void quickSort(int[] vetor, int inicio, int fim)
+        static public void quickSortRecursive(int[] vetor, int primeiro, int ultimo)
         {
-            if (inicio < fim)
+
+            int baixo, alto, meio, pivo, repositorio;
+            baixo = primeiro;
+            alto = ultimo;
+            meio = (int)((baixo + alto) / 2);
+
+            pivo = vetor[meio];
+
+            while (baixo <= alto)
             {
-                int p = vetor[inicio];
-                int i = inicio + 1;
-                int f = fim;
-
-                while (i <= f)
+                while (vetor[baixo] < pivo)
+                    baixo++;
+                while (vetor[alto] > pivo)
+                    alto--;
+                if (baixo < alto)
                 {
-                    if (vetor[i] <= p)
+                    repositorio = vetor[baixo];
+                    vetor[baixo++] = vetor[alto];
+                    vetor[alto--] = repositorio;
+                }
+                else
+                {
+                    if (baixo == alto)
                     {
-                        i++;
-                    }
-                    else if (p < vetor[f])
-                    {
-                        f--;
-                    }
-                    else
-                    {
-                        int troca = vetor[i];
-
-                        vetor[i] = vetor[f];
-
-                        vetor[f] = troca;
-
-                        i++;
-
-                        f--;
+                        baixo++;
+                        alto--;
                     }
                 }
-
-                vetor[inicio] = vetor[f];
-
-                vetor[f] = p;
-
-                quickSort(vetor, inicio, f - 1);
-
-                quickSort(vetor, f + 1, fim);
-                Console.WriteLine(vetor.Length);
             }
+
+            if (alto > primeiro)
+                quickSortRecursive(vetor, primeiro, alto);
+            if (baixo < ultimo)
+                quickSortRecursive(vetor, baixo, ultimo);
         }
     }
 }

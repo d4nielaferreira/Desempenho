@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,20 +10,20 @@ namespace Ordenacao
     class HeapSort
     {
         private int heapSize;
-        private DateTime tempoinicio = DateTime.Now;
-        private DateTime tempofinal;
 
-        public string inicio;
         public string final;
 
         public HeapSort(int[] vetor)
         {
-            inicio = tempoinicio.ToString("hh:mm:ss.fff tt");
+            Stopwatch timer = new Stopwatch();
+
+            timer.Start();
 
             PerformHeapSort(vetor);
 
-            tempofinal = DateTime.Now;
-            final = tempofinal.ToString("hh:mm:ss.fff tt");
+            timer.Stop();
+
+            final = timer.ElapsedMilliseconds.ToString();
         }
 
         private void BuildHeap(int[] arr)

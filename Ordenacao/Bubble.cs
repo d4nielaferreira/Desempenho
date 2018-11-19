@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,21 +9,22 @@ namespace Ordenacao
 {
     class Bubble
     {
-        private static DateTime tempoinicio;
-        private static DateTime tempofinal;
 
-        public string inicio;
         public string final;
 
         public Bubble(int[] vetor)
         {
-            tempoinicio = DateTime.Now;
-            inicio = tempoinicio.ToString("hh:mm:ss.fff tt");
+            Stopwatch timer = new Stopwatch();
+
+            timer.Start();
 
             Bolha(vetor);
 
-            tempofinal = DateTime.Now;
-            final = tempofinal.ToString("hh:mm:ss.fff tt");
+            timer.Stop();
+
+            final = timer.ElapsedMilliseconds.ToString();
+
+            
 
         }
 

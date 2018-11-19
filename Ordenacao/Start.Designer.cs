@@ -63,7 +63,7 @@
             this.btnFinalizar.Name = "btnFinalizar";
             this.btnFinalizar.Size = new System.Drawing.Size(75, 23);
             this.btnFinalizar.TabIndex = 2;
-            this.btnFinalizar.Text = "Finalizar";
+            this.btnFinalizar.Text = "Executar";
             this.btnFinalizar.UseVisualStyleBackColor = true;
             this.btnFinalizar.Click += new System.EventHandler(this.button3_Click);
             // 

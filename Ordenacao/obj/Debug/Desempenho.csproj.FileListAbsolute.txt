@@ -19,3 +19,14 @@ C:\Users\mravi\Documents\APS\aps4\Desempenho\Ordenacao\obj\Debug\Desempenho.cspr
 C:\Users\mravi\Documents\APS\aps4\Desempenho\Ordenacao\obj\Debug\Ordenacao.exe
 C:\Users\mravi\Documents\APS\aps4\Desempenho\Ordenacao\obj\Debug\Ordenacao.pdb
 C:\Users\mravi\Documents\APS\aps4\Desempenho\Ordenacao\obj\Debug\Ordenacao.Ordenacao.resources
+C:\Users\paulo\Documents\GitHub\Desempenho\Ordenacao\bin\Debug\Ordenacao.exe.config
+C:\Users\paulo\Documents\GitHub\Desempenho\Ordenacao\bin\Debug\Ordenacao.exe
+C:\Users\paulo\Documents\GitHub\Desempenho\Ordenacao\bin\Debug\Ordenacao.pdb
+C:\Users\paulo\Documents\GitHub\Desempenho\Ordenacao\obj\Debug\Desempenho.csprojAssemblyReference.cache
+C:\Users\paulo\Documents\GitHub\Desempenho\Ordenacao\obj\Debug\Ordenacao.Ordenacao.resources
+C:\Users\paulo\Documents\GitHub\Desempenho\Ordenacao\obj\Debug\Ordenacao.Properties.Resources.resources
+C:\Users\paulo\Documents\GitHub\Desempenho\Ordenacao\obj\Debug\Ordenacao.Start.resources
+C:\Users\paulo\Documents\GitHub\Desempenho\Ordenacao\obj\Debug\Desempenho.csproj.GenerateResource.cache
+C:\Users\paulo\Documents\GitHub\Desempenho\Ordenacao\obj\Debug\Desempenho.csproj.CoreCompileInputs.cache
+C:\Users\paulo\Documents\GitHub\Desempenho\Ordenacao\obj\Debug\Ordenacao.exe
+C:\Users\paulo\Documents\GitHub\Desempenho\Ordenacao\obj\Debug\Ordenacao.pdb
