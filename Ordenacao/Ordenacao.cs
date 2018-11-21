@@ -36,8 +36,10 @@ namespace Ordenacao
         {
             //Passando os valores aleatórios
             Bubble bubble = new Bubble(numeros);
-
+            
             bFinal.Text = "Duração: " + bubble.final + "ms";
+
+            numeros = aleatorio();
         }
 
         //Chamando o métodos HeapSort
@@ -47,6 +49,8 @@ namespace Ordenacao
             HeapSort heap = new HeapSort(numeros);
 
             hFinal.Text = "Duração: " + heap.final + "ms";
+
+            numeros = aleatorio();
         }
 
         //Chamando o métodos quicksort
@@ -56,6 +60,8 @@ namespace Ordenacao
             QuickSort quick = new QuickSort(numeros);
 
             qFinal.Text = "Duração: " + quick.final + "ms";
+
+            numeros = aleatorio();
         }
 
         //Método para gerar os números aleatóriamente
