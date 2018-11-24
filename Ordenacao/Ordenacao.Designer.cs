@@ -53,7 +53,7 @@
             this.HeadpSort.Name = "HeadpSort";
             this.HeadpSort.Size = new System.Drawing.Size(75, 23);
             this.HeadpSort.TabIndex = 4;
-            this.HeadpSort.Text = "HeadpSort";
+            this.HeadpSort.Text = "HeapSort";
             this.HeadpSort.UseVisualStyleBackColor = true;
             this.HeadpSort.Click += new System.EventHandler(this.button2_Click);
             // 

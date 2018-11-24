@@ -12,13 +12,15 @@ namespace Ordenacao
 {
     public partial class Ordenacao : Form
     {
-        //iniciando o array para armezar os números a serem ordenados
+        //iniciando o array para armazenar os números a serem ordenados
         int[] numeros;
+        int type;
 
         //Método construtor para quando for aleatório
         public Ordenacao()
         {
             numeros = aleatorio();
+            type = 1;
 
             InitializeComponent();
         }
@@ -34,12 +36,18 @@ namespace Ordenacao
         //Chamando o métodos BubbleSort
         private void button1_Click(object sender, EventArgs e)
         {
+            
             //Passando os valores aleatórios
             Bubble bubble = new Bubble(numeros);
-            
-            bFinal.Text = "Duração: " + bubble.final + "ms";
 
-            numeros = aleatorio();
+            bFinal.Text = "Duração: " + bubble.final + "ms";
+            foreach (int i in numeros)
+
+            if (type == 1)
+            {
+                numeros = aleatorio();
+            }
+
         }
 
         //Chamando o métodos HeapSort
@@ -50,7 +58,10 @@ namespace Ordenacao
 
             hFinal.Text = "Duração: " + heap.final + "ms";
 
-            numeros = aleatorio();
+            if (type == 1)
+            {
+                numeros = aleatorio();
+            }
         }
 
         //Chamando o métodos quicksort
@@ -58,10 +69,13 @@ namespace Ordenacao
         {
             //Passando os valores aleatórios
             QuickSort quick = new QuickSort(numeros);
-
+            
             qFinal.Text = "Duração: " + quick.final + "ms";
 
-            numeros = aleatorio();
+            if (type == 1)
+            {
+                numeros = aleatorio();
+            }
         }
 
         //Método para gerar os números aleatóriamente
